@@ -58,8 +58,16 @@ print('The distribution of characters in "' + U_sen + '. ' + 'is: ')
 
 
 for x in alpha:
-    if not .count(x)==0:
+    if sen .count(x) != 0:
         lttr.append(x)
-        lttr_nr.append(.count(x))
+        lttr_nr.append(sen .count(x))
 
-zip(lttr, lttr_nr)
+lttr_nr_list=zip(lttr, lttr_nr)
+L1=list(lttr_nr_list)
+print(L1)
+print(L1[1])
+
+
+
+
+
