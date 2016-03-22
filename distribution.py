@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Funjando
+Credit: DCFC21, Cedrik Julian, Payton
 
 Assignment:
 
@@ -36,3 +36,30 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+#Import
+import string
+
+#Input
+U_sen=input("Please enter a string of text (the bigger the better): ")
+
+sen=U_sen.lower()
+sen=sen.replace(" ", "")
+sen=sen.replace(",", "")
+sen=sen.replace(".", "")
+
+#List
+alpha=string.ascii_lowercase
+lttr=[]
+lttr_nr=[]
+
+
+#Code
+print('The distribution of characters in "' + U_sen + '. ' + 'is: ')
+
+
+for x in alpha:
+    if not .count(x)==0:
+        lttr.append(x)
+        lttr_nr.append(.count(x))
+
+zip(lttr, lttr_nr)
