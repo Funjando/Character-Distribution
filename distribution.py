@@ -64,8 +64,13 @@ for x in alpha:
 
 lttr_nr_list=zip(lttr, lttr_nr)
 L1=list(lttr_nr_list)
-print(L1)
-print(L1[1])
+
+def getKey(item):
+    return item[1]
+
+L1s=sorted(L1, key=getKey)
+L1s=L1s[::-1]
+print(L1s)
 
 
 
