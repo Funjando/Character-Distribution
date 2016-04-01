@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Funjando
-Credit: DCFC21, Cedrik Julian, Payton
+Credit: DCFC21, Cedrik Julian, Payton, Michael J. Barber, 
 
 Assignment:
 
@@ -36,6 +36,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+
 #Import
 import string
 
@@ -49,8 +50,11 @@ sen=sen.replace(".", "")
 
 #List
 alpha=string.ascii_lowercase
+
+
 lttr=[]
 lttr_nr=[]
+
 
 
 #Code
@@ -60,17 +64,29 @@ print('The distribution of characters in "' + U_sen + '. ' + 'is: ')
 for x in alpha:
     if sen .count(x) != 0:
         lttr.append(x)
-        lttr_nr.append(sen .count(x))
+        lttr_nr.append(0-(sen .count(x)))
 
-lttr_nr_list=zip(lttr, lttr_nr)
-L1=list(lttr_nr_list)
 
-def getKey(item):
-    return item[1]
 
-L1s=sorted(L1, key=getKey)
-L1s=L1s[::-1]
-print(L1s)
+L1=zip(lttr_nr, lttr)
+
+
+
+
+
+L1s=sorted(L1, key=lambda element: (element[0], element[1]))
+#L1s=L1s[::-1]
+
+#List
+
+
+
+for item in L1s:
+
+    print(item[1]*(-1*item[0]))
+
+
+
 
 
 
