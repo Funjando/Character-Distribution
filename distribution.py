@@ -58,7 +58,7 @@ lttr_nr=[]
 
 
 #Code
-print('The distribution of characters in "' + U_sen + '. ' + 'is: ')
+print('The distribution of characters in "' + U_sen + '" ' + 'is: ')
 
 
 for x in alpha:
